@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Karim Hussain <contact@karim-hussain.com>",
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
     "acorn": "^8.4.1",
     "babel-eslint": "^10.1.0",
     "gatsby": "^3.10.2",
