@@ -6,11 +6,18 @@ import { H1, P } from '../components/page-elements/elements';
 const IndexPage = () => (
   <>
     <Seo title="Home" />
-    <H1>Hi people</H1>
-    <P>Welcome to your new Gatsby site.</P>
-    <P>Now go build something great.</P>
+    <H1>Hi, I'm Karim</H1>
     <P>
-      <Link to="/blog/my-first-post/">Go to my first Markdown blog post</Link> <br />
+      I'm a problem solver. With help of modern technology and an open mindset I architect
+      solutions, develop and design software, solve business problems, teach and engage for a
+      brighter future on our planet Earth. I love technology, people and to have fun.
+    </P>
+    <P>
+      On this site you can read about me and my thoughts in my personal blog or find out how to get
+      in contact with me.
+    </P>
+    <P>
+      <Link to="/blog/my-first-post/">Go to my first blog post</Link> <br />
     </P>
   </>
 );
