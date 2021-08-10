@@ -1,30 +1,17 @@
 import * as React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-
-const useStyles = makeStyles(() => ({
-  root: {
-    flexGrow: 1,
-  },
-  title: {
-    flexGrow: 1,
-  },
-}));
+import { Link } from 'gatsby';
+import { HEADER, H4 } from '../components/page-elements/elements';
 
 export default function Header({ siteTitle }) {
-  const classes = useStyles();
-
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-          <Typography variant="h6" className={classes.title} align="center">
+    <HEADER>
+      <div style={{ margin: '0 auto', maxWidth: '960px', padding: '1.45rem 1.0875rem' }}>
+        <H4>
+          <Link to="/" style={{ color: 'inherit', textDecoration: 'none' }}>
             <b>{siteTitle}</b>
-          </Typography>
-        </Toolbar>
-      </AppBar>
-    </div>
+          </Link>
+        </H4>
+      </div>
+    </HEADER>
   );
 }
