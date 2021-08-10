@@ -1,9 +1,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
-import { GlobalStyle } from '../themes/global-style';
 import Header from './header';
-import SimpleBottomNavigation from './simpleBottomNavigation';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -18,7 +16,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title.split('-')[0] || `Title`} />
+      <Header siteTitle={data.site.siteMetadata?.title.split('-')[0] || `Title`} linkTo="/" />
       <div
         style={{
           margin: `0 auto`,
@@ -26,19 +24,19 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <GlobalStyle />
         <main>{children}</main>
+
         <footer
           style={{
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()}, Built with
+          © Copyright {new Date().getFullYear()},{' '}
+          <a href="https://www.karim-hussain.com">Karim Hussain</a>. Built with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </div>
-      <SimpleBottomNavigation />
     </>
   );
 };
