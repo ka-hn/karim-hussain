@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Karim Hussain - Lead Solution Architect',
-    description: 'Karim Hussain is a building automation specialist, solution architect and problem solver. Ensures life on earth with energy efficient and sustainable buildings.',
+    description:
+      'Karim Hussain is a building automation specialist, solution architect and problem solver. Ensures life on earth with energy efficient and sustainable buildings.',
     author: 'Karim Hussain',
     siteUrl: 'https://karim-hussain.com/',
   },
@@ -30,7 +31,8 @@ module.exports = {
       options: {
         name: 'Karim Hussain - Lead Solution Architect & Software Designer',
         short_name: 'Karim Hussain',
-        description: 'Professional problem solver and technical enthusiast. Reducing carbon footprint and working for a better tomorrow with modern technologies in buildings.',
+        description:
+          'Professional problem solver and technical enthusiast. Reducing carbon footprint and working for a better tomorrow with modern technologies in buildings.',
         lang: 'en',
         start_url: '/',
         background_color: '#663399',
@@ -42,5 +44,13 @@ module.exports = {
       },
     },
     'gatsby-plugin-material-ui',
+    'gatsby-plugin-styled-components',
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`rubik`, `karla`, `fira code`, `arvo`, `chivo`, `overpass`],
+        display: 'swap',
+      },
+    },
   ],
 };
