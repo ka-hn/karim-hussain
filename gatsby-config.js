@@ -48,7 +48,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`rubik`, `karla`, `fira code`, `arvo`, `chivo`, `overpass`],
+        fonts: [`rubik`, `karla`, `fira code`, `chivo`, `overpass`],
         display: 'swap',
       },
     },
