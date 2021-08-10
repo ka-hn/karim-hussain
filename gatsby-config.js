@@ -45,12 +45,5 @@ module.exports = {
     },
     'gatsby-plugin-material-ui',
     'gatsby-plugin-styled-components',
-    {
-      resolve: `gatsby-plugin-google-fonts`,
-      options: {
-        fonts: [`rubik`, `karla`, `fira code`, `chivo`, `overpass`],
-        display: 'swap',
-      },
-    },
   ],
 };
