@@ -132,23 +132,23 @@ export const theme = {
   },
   palette: {
     primary: {
-      main: '#64c9cf',
-      light: '#99fcff',
-      dark: '#99fcff',
+      main: '#e63947',
+      light: '#ff7072',
+      dark: '#ad0020',
     },
     secondary: {
-      main: '#3455a8',
-      light: '#6a81da',
-      dark: '#99fcff',
+      main: '#1d3557',
+      light: '#4a5e84',
+      dark: '#000e2e',
     },
     background: {
-      default: '#fde49c',
-      light: '#ffffce',
-      dark: '#c9b26d',
+      default: '#f1faee',
+      light: '#ffffff',
+      dark: '#bec7bc',
     },
     navigation: {
-      light: '#ffb740',
-      dark: '#df711b',
+      light: '#76aace',
+      dark: '#094f6f',
     },
   },
 };
@@ -167,8 +167,17 @@ export const GlobalStyle = createGlobalStyle`
     color: ${({ theme }) => theme.colors.grey[900]};
   }
   body {
+    display: flex;
+    flex-direction: column;
     line-height: ${({ theme }) => theme.lineHeight.relaxed};
     letter-spacing: ${({ theme }) => theme.letterSpacing.wide};
     background-color: ${({ theme }) => theme.palette.background.default};
+  }
+  a:color: ${({ theme }) => theme.palette.navigation.light};
+  a:visited {
+    color: ${({ theme }) => theme.palette.navigation.dark};
+  }
+  footer {
+    color: ${({ theme }) => theme.colors.grey[50]};
   }
 `;
