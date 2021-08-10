@@ -17,7 +17,7 @@ const IndexPage = () => (
       in contact with me.
     </P>
     <P>
-      <Link to="/blog/my-first-post/">Go to my first blog post</Link> <br />
+      <Link to="/blog/my-first-post">Go to my first blog post</Link> <br />
     </P>
   </>
 );
