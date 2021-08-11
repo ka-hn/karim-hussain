@@ -43,7 +43,6 @@ module.exports = {
         cache_busting_mode: 'none',
       },
     },
-    'gatsby-plugin-material-ui',
     'gatsby-plugin-styled-components',
   ],
 };
